@@ -1,0 +1,129 @@
+ion-content {
+  --background: #f4f5f8;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+}
+
+ion-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+ion-card-header {
+  padding: 16px 16px 0;
+}
+
+ion-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+ion-card-content {
+  padding: 16px;
+}
+
+/* Cidade Foto Card */
+.cidade-foto-card {
+  position: relative;
+  padding: 0;
+  min-height: 220px;
+}
+
+.cidade-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.cidade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 32px 16px 16px;
+  color: white;
+}
+
+.cidade-overlay h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Descrição Card */
+.descricao-card {
+  background: #ffffff;
+}
+
+.descricao-card ion-card-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Pontos Turísticos Card */
+.pontos-turisticos-card {
+  background: #ffffff;
+}
+
+.ponto-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ponto-item:last-child {
+  margin-bottom: 0;
+}
+
+.ponto-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ponto-item ion-thumbnail {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ponto-item ion-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ponto-item ion-label h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.ponto-item ion-label p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Toolbar */
+ion-toolbar {
+  --background: var(--ion-color-primary);
+  --color: white;
+}
+
+ion-title {
+  font-weight: 600;
+}

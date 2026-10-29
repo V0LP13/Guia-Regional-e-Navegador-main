@@ -1,0 +1,111 @@
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+ion-content {
+  --background: #f4f5f8;
+}
+
+/* Card Busca CEP */
+.busca-cep-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.busca-cep-card ion-card-header {
+  padding-bottom: 8px;
+}
+
+.busca-cep-card ion-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.busca-cep-card ion-card-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.busca-cep-card ion-input {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+.busca-cep-card ion-button {
+  --border-radius: 8px;
+  height: 48px;
+  font-weight: 600;
+}
+
+/* Card Cidades Rápidas */
+.cidades-rapidas-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cidades-rapidas-card ion-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.cidade-btn {
+  --border-radius: 10px;
+  height: 100%;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 12px 8px;
+  transition: all 0.2s;
+}
+
+.cidade-btn ion-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.cidade-btn:hover,
+.cidade-btn.ion-activated {
+  --background: rgba(var(--ion-color-primary-rgb), 0.1);
+  --border-color: var(--ion-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cidade-btn ion-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Grid responsivo */
+ion-grid {
+  --ion-grid-column-gap: 12px;
+  --ion-grid-row-gap: 12px;
+  --ion-grid-padding: 0;
+}
+
+ion-row {
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+ion-col {
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+/* Toolbar */
+ion-toolbar {
+  --background: var(--ion-color-primary);
+  --color: white;
+}
+
+ion-title {
+  font-weight: 600;
+}
