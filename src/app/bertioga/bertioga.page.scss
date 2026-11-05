@@ -1,5 +1,5 @@
 ion-content {
-  --background: #f4f5f8;
+  --background: var(--ion-background-color);
   --padding-start: 16px;
   --padding-end: 16px;
   --padding-top: 16px;
@@ -19,14 +19,17 @@ ion-card-header {
 ion-card-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--ion-text-color);
 }
 
 ion-card-content {
   padding: 16px;
 }
 
-/* Cidade Foto Card */
+ion-button {
+  padding-top: 5px;
+}
+
 .cidade-foto-card {
   position: relative;
   padding: 0;
@@ -56,21 +59,28 @@ ion-card-content {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Descrição Card */
 .descricao-card {
-  background: #ffffff;
+  --background: var(--ion-card-background, var(--ion-background-color));
 }
 
 .descricao-card ion-card-content p {
   margin: 0;
   line-height: 1.6;
-  color: #333;
+  color: var(--ion-text-color);
   font-size: 1rem;
 }
 
-/* Pontos Turísticos Card */
+.lista {
+  display: flex;
+  gap: 10px
+}
+
+ ion-card-content .lista p {
+  align-self: center;
+}
+
 .pontos-turisticos-card {
-  background: #ffffff;
+  --background: var(--ion-card-background, var(--ion-background-color));
 }
 
 .ponto-item {
@@ -78,7 +88,8 @@ ion-card-content {
   --padding-end: 0;
   margin-bottom: 12px;
   border-radius: 10px;
-  background: #fafafa;
+  --background: var(--ion-item-background, var(--ion-background-color));
+  color: var(--ion-text-color);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -108,17 +119,16 @@ ion-card-content {
   margin: 0 0 6px 0;
   font-size: 1.05rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--ion-text-color);
 }
 
 .ponto-item ion-label p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--ion-color-medium);
   line-height: 1.4;
 }
 
-/* Toolbar */
 ion-toolbar {
   --background: var(--ion-color-primary);
   --color: white;

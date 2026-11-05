@@ -12,14 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'teste',
-    loadChildren: () => import('./teste/teste.module').then( m => m.TestePageModule)
-  },
-  {
-    path: 'teste2',
-    loadChildren: () => import('./teste2/teste2.module').then( m => m.Teste2PageModule)
-  },
-  {
     path: 'santos',
     loadChildren: () => import('./santos/santos.module').then( m => m.SantosPageModule)
   },
@@ -49,7 +41,7 @@ const routes: Routes = [
   },
   {
     path: 'itanhaem',
-    loadChildren: () => import('./mongagua/itanhaem/itanhaem.module').then( m => m.ItanhaemPageModule)
+    loadChildren: () => import('./itanhaem/itanhaem.module').then( m => m.ItanhaemPageModule)
   },
   {
     path: 'peruibe',

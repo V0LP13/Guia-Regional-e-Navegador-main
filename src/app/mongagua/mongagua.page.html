@@ -11,7 +11,6 @@
     </ion-toolbar>
   </ion-header>
 
-  <!-- Foto da Cidade -->
   <ion-card class="cidade-foto-card">
     <img [src]="cidadeFoto" alt="{{ cidadeNome }}" class="cidade-img" onerror="this.src='assets/images/placeholder-cidade.svg'">
     <div class="cidade-overlay">
@@ -19,17 +18,25 @@
     </div>
   </ion-card>
 
-  <!-- Descrição da Cidade -->
   <ion-card class="descricao-card">
     <ion-card-header>
       <ion-card-title>Sobre a Cidade</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <p>{{ descricao }}</p>
+      <div class="lista">
+        <ion-button target="_blank" href="https://www.mongagua.sp.gov.br">
+          <ion-icon slot="start" name="open-outline"></ion-icon>Site da
+          Prefeitura</ion-button>
+        <p>Ou ligue pelo número da prefeitura:</p>
+        <ion-button href="tel:+551334453010">
+          <ion-icon name="call-outline" slot="start"></ion-icon>
+          Ligar
+        </ion-button>
+      </div>
     </ion-card-content>
   </ion-card>
 
-  <!-- Pontos Turísticos -->
   <ion-card class="pontos-turisticos-card">
     <ion-card-header>
       <ion-card-title>Pontos Turísticos</ion-card-title>

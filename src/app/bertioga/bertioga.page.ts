@@ -17,7 +17,6 @@ export class BertiogaPage implements OnInit {
   cidadeNome: string = 'Bertioga';
 
   descricao: string = 'Bertioga é um município brasileiro do estado de São Paulo, localizado na Região Metropolitana da Baixada Santista. Conhecida por suas belas praias, pela Mata Atlântica preservada e pelo Forte São João, a cidade encanta visitantes com sua natureza exuberante e clima agradável.';
-
   pontosTuristicos: PontoTuristico[] = [
     {
       nome: 'Forte São João',

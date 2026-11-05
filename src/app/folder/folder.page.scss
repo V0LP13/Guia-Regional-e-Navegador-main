@@ -3,13 +3,14 @@ ion-menu-button {
 }
 
 ion-content {
-  --background: #f4f5f8;
+  --background: var(--ion-background-color);
 }
 
-/* Card Busca CEP */
-.busca-cep-card {
+.busca-cep-card,
+.cidades-rapidas-card {
   margin-bottom: 16px;
   border-radius: 12px;
+  background: var(--ion-card-background);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -17,15 +18,16 @@ ion-content {
   padding-bottom: 8px;
 }
 
-.busca-cep-card ion-card-title {
+.busca-cep-card ion-card-title,
+.cidades-rapidas-card ion-card-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--ion-text-color);
 }
 
 .busca-cep-card ion-card-subtitle {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--ion-color-medium);
 }
 
 .busca-cep-card ion-input {
@@ -39,16 +41,9 @@ ion-content {
   font-weight: 600;
 }
 
-/* Card Cidades Rápidas */
 .cidades-rapidas-card {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.cidades-rapidas-card ion-card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1a1a2e;
 }
 
 .cidade-btn {
@@ -83,7 +78,6 @@ ion-content {
   line-height: 1.2;
 }
 
-/* Grid responsivo */
 ion-grid {
   --ion-grid-column-gap: 12px;
   --ion-grid-row-gap: 12px;
@@ -100,12 +94,12 @@ ion-col {
   --padding-end: 0;
 }
 
-/* Toolbar */
 ion-toolbar {
   --background: var(--ion-color-primary);
   --color: white;
 }
 
 ion-title {
+  --color: #000;
   font-weight: 600;
 }
